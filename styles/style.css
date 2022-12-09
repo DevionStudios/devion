@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=Lora:ital,wght@1,600;1,700&family=Rubik+80s+Fade&family=Satisfy&family=Zen+Dots&display=swap");
+:root {
+  --d: 2500ms;
+  --angle: 90deg;
+  --gradX: 100%;
+  --gradY: 50%;
+  --c1: rgba(168, 239, 255, 1);
+  --c2: rgba(168, 239, 255, 0.1);
+}
+
+body {
+  font-family: "IBM Plex Serif", serif;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: url("../assets/background.jpg");
+  color: white;
+  background-size: cover;
+}
+
+#headerContainer {
+  font-family: "Lora", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+h1 {
+  font-family: "Zen Dots", serif;
+  color: antiquewhite;
+}
+
+h2 {
+  font-family: "Zen Dots", serif;
+  color: antiquewhite;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background: rgba(132, 187, 255, 0.11);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.3px);
+  -webkit-backdrop-filter: blur(4.3px);
+  animation: borderRadial var(--d) linear infinite forwards;
+  width: 70%;
+  margin-left: 12.5vw;
+  border-radius: 20px;
+  padding: 20px;
+  height: 93vh;
+}
+
+#home-body-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+}
+#home-body-container .box-container {
+  display: inline;
+}
+#home-body-container .inner-box-container {
+  display: flex;
+  flex-direction: row;
+  justify-self: space-between;
+  align-items: stretch;
+  width: 100%;
+  gap: 80px;
+  position: relative;
+  top: 5%;
+}
+#home-body-container .inner-box-container a {
+  position: relative;
+  display: inline-block;
+  border-radius: 20px;
+  padding: 20px 0px;
+  color: #03e9f4;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  overflow: hidden;
+  width: 100%;
+}
+#home-body-container .inner-box-container a:hover {
+  background: #03e9f4;
+  color: #050801;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0, 0, 0, 0.3333333333));
+}
+#home-body-container .inner-box-container a:nth-child(1) {
+  filter: hue-rotate(270deg);
+}
+#home-body-container .inner-box-container a:nth-child(2) {
+  filter: hue-rotate(400deg);
+}
+#home-body-container .inner-box-container a:nth-child(3) {
+  filter: hue-rotate(310deg);
+}
+#home-body-container .inner-box-container a:nth-child(4) {
+  filter: hue-rotate(20deg);
+}
+#home-body-container .inner-box-container a span {
+  position: absolute;
+  display: block;
+}
+#home-body-container .inner-box-container a span:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: animate1 1s linear infinite;
+}
+@keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+  50%, 100% {
+    left: 100%;
+  }
+}
+#home-body-container .inner-box-container a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+@keyframes animate2 {
+  0% {
+    top: -100%;
+  }
+  50%, 100% {
+    top: 100%;
+  }
+}
+#home-body-container .inner-box-container a span:nth-child(3) {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+@keyframes animate3 {
+  0% {
+    right: -100%;
+  }
+  50%, 100% {
+    right: 100%;
+  }
+}
+#home-body-container .inner-box-container a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+@keyframes animate4 {
+  0% {
+    bottom: -100%;
+  }
+  50%, 100% {
+    bottom: 100%;
+  }
+}
+#home-body-container .inner-box-container .box-container {
+  display: flex;
+  position: relative;
+  top: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 5px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+#home-body-container .inner-box-container .box-container p {
+  font-size: 0.8rem;
+  font-family: "Lora", serif;
+}
+#home-body-container .inner-box-container .box-container h3 {
+  font-family: "Zen Dots", serif;
+}
+
+.pics {
+  width: 200px;
+  border-radius: 100px;
+}
+
+/*# sourceMappingURL=style.css.map */
