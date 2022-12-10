@@ -52,10 +52,21 @@ h2 {
   -webkit-backdrop-filter: blur(4.3px);
   animation: borderRadial var(--d) linear infinite forwards;
   width: 70%;
-  margin-left: 12.5vw;
+  margin-left: 12.5%;
   border-radius: 20px;
   padding: 20px;
   height: 93vh;
+}
+
+#aboutHeaderContainer {
+  font-family: "Lora", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 
 #home-body-container {
@@ -202,6 +213,144 @@ h2 {
 .pics {
   width: 200px;
   border-radius: 100px;
+}
+
+.aboutLogo {
+  margin-top: 5%;
+}
+
+iframe {
+  background: rgba(0, 36, 120, 0.753);
+  padding: 9px;
+  border: 12px outset rgba(224, 224, 224, 0.168627451);
+  border-radius: 5px;
+  width: 373.33px;
+  height: 210px;
+}
+
+@media only screen and (max-width: 1007px) and (min-width: 641px) {
+  iframe {
+    height: 170px;
+    width: 302px;
+  }
+  body {
+    background-position: 50% 0%;
+  }
+  .container {
+    margin-left: 10%;
+  }
+  #home-body-container .inner-box-container a {
+    width: 70%;
+    padding: 5px 0px;
+    height: 180px;
+  }
+  #home-body-container .inner-box-container .box-container h3 {
+    font-size: 14px;
+    position: relative;
+    right: 5px;
+  }
+  #home-body-container .inner-box-container .box-container p {
+    font-size: 0.6rem;
+    position: relative;
+    right: 4px;
+  }
+}
+@media only screen and (max-width: 640px) and (min-width: 400px) {
+  .container {
+    margin-left: 8%;
+  }
+  iframe {
+    height: 100px;
+    width: 180px;
+  }
+  body {
+    background-position: 48% 0%;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  #aboutHeaderContainer p {
+    font-size: 15px;
+    word-spacing: 0.5px;
+  }
+  #home-body-container .inner-box-container {
+    gap: 10px;
+  }
+  #home-body-container .inner-box-container a {
+    width: 50%;
+    padding: 5px 0px;
+    height: 180px;
+    letter-spacing: 0.5px;
+    text-align: center;
+  }
+  #home-body-container .inner-box-container .box-container h3 {
+    font-size: 12px;
+    position: relative;
+    right: 5px;
+  }
+  #home-body-container .inner-box-container .box-container p {
+    font-size: 0.55rem;
+    position: relative;
+    right: 4px;
+  }
+}
+@media only screen and (max-width: 399px) {
+  iframe {
+    height: 100px;
+    width: 180px;
+  }
+  body {
+    background-position: 48% 0%;
+    background-size: 100% 100%;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  .container {
+    margin-left: 5vw;
+  }
+  #aboutHeaderContainer p {
+    font-size: 12px;
+    word-spacing: 0.5px;
+  }
+  #home-body-container .inner-box-container {
+    gap: 10px;
+  }
+  #home-body-container .inner-box-container a {
+    width: 50%;
+    padding: 5px 0px;
+    height: 180px;
+    letter-spacing: 0.5px;
+    text-align: center;
+  }
+  #home-body-container .inner-box-container .box-container h3 {
+    font-size: 12px;
+    position: relative;
+    right: 5px;
+  }
+  #home-body-container .inner-box-container .box-container p {
+    font-size: 0.55rem;
+    position: relative;
+    right: 4px;
+  }
+}
+.footer {
+  text-align: center;
+}
+.footer .copywriteText {
+  font-family: "Lora", serif;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.5882352941);
+}
+.footer a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */
